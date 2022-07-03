@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="astoyw.kai.demobank.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="astoyw.kai.demobank.model.User">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="uuid" column="uuid" jdbcType="CHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="pwd" column="pwd" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="idNumber" column="id_number" jdbcType="VARCHAR"/>
+            <result property="idIssued" column="id_issued" jdbcType="VARCHAR"/>
+            <result property="idValidDate" column="id_valid_date" jdbcType="VARCHAR"/>
+            <result property="idAddr" column="id_addr" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
+            <result property="birth" column="birth" jdbcType="VARCHAR"/>
+            <result property="nation" column="nation" jdbcType="VARCHAR"/>
+            <result property="industry" column="industry" jdbcType="VARCHAR"/>
+            <result property="mZip" column="m_zip" jdbcType="CHAR"/>
+            <result property="mZipText" column="m_zip_text" jdbcType="VARCHAR"/>
+            <result property="mLoc" column="m_loc" jdbcType="VARCHAR"/>
+            <result property="lZip" column="l_zip" jdbcType="CHAR"/>
+            <result property="lZipText" column="l_zip_text" jdbcType="VARCHAR"/>
+            <result property="lLoc" column="l_loc" jdbcType="VARCHAR"/>
+            <result property="hZip" column="h_zip" jdbcType="CHAR"/>
+            <result property="hZipText" column="h_zip_text" jdbcType="VARCHAR"/>
+            <result property="hLoc" column="h_loc" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="education" column="education" jdbcType="VARCHAR"/>
+            <result property="marriage" column="marriage" jdbcType="VARCHAR"/>
+            <result property="children" column="children" jdbcType="VARCHAR"/>
+            <result property="carProperty" column="car_property" jdbcType="VARCHAR"/>
+            <result property="houseProperty" column="house_property" jdbcType="VARCHAR"/>
+            <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+            <result property="companyAddress" column="company_address" jdbcType="VARCHAR"/>
+            <result property="companyAddressZipCode" column="company_address_zip_code" jdbcType="VARCHAR"/>
+            <result property="annualIncome" column="annual_income" jdbcType="VARCHAR"/>
+            <result property="identityTime" column="identity_time" jdbcType="TIMESTAMP"/>
+            <result property="identityVerified" column="identity_verified" jdbcType="VARCHAR"/>
+            <result property="referrer" column="referrer" jdbcType="VARCHAR"/>
+            <result property="loanFlag" column="loan_flag" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="extWeixinId" column="ext_weixin_id" jdbcType="VARCHAR"/>
+            <result property="createUserUuid" column="create_user_uuid" jdbcType="CHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="lastUpdateUserUuid" column="last_update_user_uuid" jdbcType="CHAR"/>
+            <result property="lastUpdateTime" column="last_update_time" jdbcType="TIMESTAMP"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,uuid,mobile,
+        pwd,name,id_number,
+        id_issued,id_valid_date,id_addr,
+        gender,birth,nation,
+        industry,m_zip,m_zip_text,
+        m_loc,l_zip,l_zip_text,
+        l_loc,h_zip,h_zip_text,
+        h_loc,email,education,
+        marriage,children,car_property,
+        house_property,company_name,company_address,
+        company_address_zip_code,annual_income,identity_time,
+        identity_verified,referrer,loan_flag,
+        status,ext_weixin_id,create_user_uuid,
+        create_time,last_update_user_uuid,last_update_time,
+        del_flag
+    </sql>
+</mapper>
